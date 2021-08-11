@@ -5,9 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("img/bg.png");
-	background-color: #999999;
+  background-image: url("img/y-so-serious-white.png");
+	background-color:#353535 !important;
   color: white;
+  padding: 0px 24px;
+  overflow-x: hidden;
 }
 
 code {
