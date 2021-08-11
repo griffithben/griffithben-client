@@ -20,7 +20,7 @@ function Home() {
           <Fade>
             <Avatar
               src="/img/me.jpg"
-              size={210}
+              size={260}
               style={{
                 border: "5px solid #eee",
                 boxShadow: "0 1px 10px rgba(0, 0, 0, 0.7)",
@@ -28,7 +28,7 @@ function Home() {
             />
           </Fade>
         </Col>
-        <Col span={11} offset={1} style={{ textAlign: "left" }}>
+        <Col span={11} offset={1} style={{ textAlign: "left", paddingTop: 26 }}>
           <Fade>
             <Title
               className="bebasNeueRegular"
@@ -81,6 +81,19 @@ function Home() {
             </Space>
           </Fade>
         </Col>
+        <Col span={23} offset={1} style={{ textAlign: "center" }}>
+            <br/><br/><br/>
+            <Title
+              className="bebasNeueRegular"
+              style={{ fontSize: "3em", marginBottom: 0, color: "white" }}
+            >
+              Contributions
+            </Title>
+          <img
+            src="http://ghchart.rshah.org/griffithben"
+            alt="Ben Griffith Github Chart"
+          ></img>
+        </Col>
       </HeaderRow>
       <PaddedRow>
         <Col
@@ -98,7 +111,7 @@ function Home() {
         </Col>
         <Col md={{ span: 24 }} lg={{ span: 10, offset: 1 }}>
           <WhiteBox>
-            <Title level={2}>Brewerwall</Title>
+            <Title level={2}>Brewerwall Creator</Title>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -152,7 +165,7 @@ function Home() {
         </Col>
         <Col md={{ span: 24 }} lg={{ span: 10, offset: 1 }}>
           <WhiteBox>
-            <Title level={2}>Fullstack Blog</Title>
+            <Title level={2}>Fullstack Blogger</Title>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
