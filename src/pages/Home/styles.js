@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Row, Tag } from "antd";
 
 export const HeaderRow = styled(Row)`
-    padding: 6em 0;
+    padding: 5em 0;
     background-image: url(/img/bg.png);
     margin: 0em -24px 2em -24px;
 `;
