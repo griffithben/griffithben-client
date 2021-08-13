@@ -1,2 +1,1 @@
-release: yarn build
-web: build/
+web: yarn start
