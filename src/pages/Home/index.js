@@ -209,7 +209,7 @@ function Home() {
             className="bebasNeueRegular"
             style={{ fontSize: "3em", marginBottom: 0, color: "white" }}
           >
-            Open Source Repositories
+            Some Open Source Projects
           </Title>
           <br />
         </Col>
