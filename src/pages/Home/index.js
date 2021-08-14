@@ -1,12 +1,20 @@
 import React from "react";
-import { Col, Typography, Space, Button, Divider } from "antd";
-import { Slide } from "react-awesome-reveal";
+import { Row, Col, Typography, Space, Button, Divider, Card } from "antd";
+import { Slide, Fade } from "react-awesome-reveal";
+import { GithubFilled } from "@ant-design/icons";
 import HeaderAvatar from "../../modules/HeaderAvatar";
 import HeaderInfo from "../../modules/HeaderInfo";
 import WhiteBox from "../../modules/WhiteBox";
-import { HeaderRow, PaddedLightRow, PaddedDarkRow, SkillTag } from "./styles";
+import {
+  HeaderRow,
+  PaddedLightRow,
+  PaddedDarkRow,
+  SkillTag,
+  OpenSourceCard,
+} from "./styles";
 
 const { Title } = Typography;
+const { Meta } = Card;
 
 const green = "#59a947";
 const brown = "#736357";
@@ -54,10 +62,9 @@ function Home() {
           <WhiteBox>
             <Title level={2}>Oberd Founder</Title>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Contributed in a team environment as a lead developer to produce
+              an international online based research data collection system for
+              orthopaedic surgeons.
             </p>
             <p>
               <Space wrap={true} size={6}>
@@ -152,10 +159,11 @@ function Home() {
           <WhiteBox>
             <Title level={2}>Fullstack Blog</Title>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Fullstack brewing started as an alias to my homebrewing efforts.
+              As my experience and knowledge grew over time, I thought it would
+              be great to start a blog about things I have learned. So I decided
+              to make a simple blog dedicated to ideas and journeys of
+              homebrewing.
             </p>
             <p>
               <Space wrap={true} size={6}>
@@ -173,26 +181,95 @@ function Home() {
       </PaddedLightRow>
       <PaddedDarkRow>
         <Col span={24} style={{ textAlign: "center" }}>
+          <br />
           <Title
             className="bebasNeueRegular"
             style={{ fontSize: "3em", marginBottom: 0, color: "white" }}
           >
             Github Contributions
           </Title>
-          <img
-            src="http://ghchart.rshah.org/griffithben"
-            alt="Ben Griffith Github Chart"
-          ></img>
+          <p>
+            <a
+              href="https://github.com/griffithben"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="http://ghchart.rshah.org/griffithben"
+                alt="Ben Griffith Github Chart"
+                style={{ maxWidth: 663, width: "80%", margin: "0em 2em" }}
+              />
+            </a>
+          </p>
         </Col>
-      </PaddedDarkRow>
-      <PaddedDarkRow>
         <Col span={24} style={{ textAlign: "center" }}>
+          <br />
+          <br />
           <Title
             className="bebasNeueRegular"
             style={{ fontSize: "3em", marginBottom: 0, color: "white" }}
           >
             Open Source Repositories
           </Title>
+          <br />
+        </Col>
+        <Col span={22} offset={1} style={{marginBottom: "4em"}}>
+          <Row gutter={16}>
+            <Col xs={24} sm={12} md={8}>
+              <Fade duration={500}>
+                <OpenSourceCard
+                  onClick={() => {
+                    window.open(
+                      "https://github.com/brewerwall/php-barcode-generator",
+                      "_blank"
+                    );
+                  }}
+                >
+                  <Meta
+                    avatar={<GithubFilled style={{ fontSize: "3.5em" }} />}
+                    title="php-barcode-generator"
+                    description="Refactor of a PHP barcode generator."
+                  />
+                </OpenSourceCard>
+              </Fade>
+            </Col>
+            <Col xs={24} sm={12} md={8}>
+              <Fade duration={500} delay={250}>
+                <OpenSourceCard
+                  onClick={() => {
+                    window.open(
+                      "https://github.com/brewerwall/beercalc_js",
+                      "_blank"
+                    );
+                  }}
+                >
+                  <Meta
+                    avatar={<GithubFilled style={{ fontSize: "3.5em" }} />}
+                    title="beercalc_js"
+                    description="A class of useful brewing calculations."
+                  />
+                </OpenSourceCard>
+              </Fade>
+            </Col>
+            <Col xs={24} sm={12} md={8}>
+              <Fade duration={500} delay={500}>
+                <OpenSourceCard
+                  onClick={() => {
+                    window.open(
+                      "https://github.com/brewerwall/yeasts",
+                      "_blank"
+                    );
+                  }}
+                >
+                  <Meta
+                    avatar={<GithubFilled style={{ fontSize: "3.5em" }} />}
+                    title="yeasts"
+                    description="A collection of brewing yeast data."
+                  />
+                </OpenSourceCard>
+              </Fade>
+            </Col>
+          </Row>
         </Col>
       </PaddedDarkRow>
     </div>
