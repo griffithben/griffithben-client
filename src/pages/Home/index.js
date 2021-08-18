@@ -70,8 +70,7 @@ function Home() {
             </p>
             <p>
               <Space wrap={true} size={6}>
-                <SkillTag color={green}>PHP 7</SkillTag>
-                <SkillTag color={green}>PHP 5</SkillTag>
+                <SkillTag color={green}>PHP 5/7/8</SkillTag>
                 <SkillTag color={green}>Javascript</SkillTag>
                 <SkillTag color={brown}>Mysql</SkillTag>
                 <SkillTag color={brown}>Postgres</SkillTag>
