@@ -63,8 +63,10 @@ function Home() {
             <Title level={2}>Oberd Founder</Title>
             <p>
               Contributed in a team environment as a lead developer to produce
-              an international online based research data collection system for
-              orthopaedic surgeons.
+              an international online research data collection system for
+              orthopaedic surgeons. This includes collecting patient data,
+              providing insightful statistics for clinicians and ensuring the
+              outcomes of patients post surgery are on track.
             </p>
             <p>
               <Space wrap={true} size={6}>
@@ -116,7 +118,8 @@ function Home() {
               homebrewers/programmers to use. Later, Brewerwall evolved into an
               online searchable resource for homebrew ingredients. Currently,
               Brewerwall is exanding into an online service to facilitate the
-              management of homebrew competitions.
+              management of homebrew competitions.{" "}
+              <i>Beta Release: Winter of 2021</i>
             </p>
             <p>
               <Space wrap={true} size={6}>
@@ -213,7 +216,7 @@ function Home() {
           </Title>
           <br />
         </Col>
-        <Col span={22} offset={1} style={{marginBottom: "4em"}}>
+        <Col span={22} offset={1} style={{ marginBottom: "4em" }}>
           <Row gutter={16}>
             <Col xs={24} sm={12} md={8}>
               <Fade duration={500}>
