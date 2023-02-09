@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.05837956.chunk.css",
+    "main.js": "/static/js/main.038ac09a.chunk.js",
+    "main.js.map": "/static/js/main.038ac09a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e6b36eeb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e6b36eeb.js.map",
+    "static/js/2.1107c45d.chunk.js": "/static/js/2.1107c45d.chunk.js",
+    "static/js/2.1107c45d.chunk.js.map": "/static/js/2.1107c45d.chunk.js.map",
+    "static/js/3.65bb3941.chunk.js": "/static/js/3.65bb3941.chunk.js",
+    "static/js/3.65bb3941.chunk.js.map": "/static/js/3.65bb3941.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.05837956.chunk.css.map": "/static/css/main.05837956.chunk.css.map",
+    "static/js/2.1107c45d.chunk.js.LICENSE.txt": "/static/js/2.1107c45d.chunk.js.LICENSE.txt",
+    "static/media/App.less": "/static/media/BebasNeue-Regular.c501e16f.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6b36eeb.js",
+    "static/js/2.1107c45d.chunk.js",
+    "static/css/main.05837956.chunk.css",
+    "static/js/main.038ac09a.chunk.js"
+  ]
+}
